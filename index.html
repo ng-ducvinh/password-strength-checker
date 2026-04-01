@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Password Tester | Test Your Password Strength</title>
+    <meta name="description" content="Advanced password strength checker with entropy, crack time estimation, and breach detection. Built by Nguyễn Đức Vinh.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- zxcvbn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="wrapper">
+    <div class="container">
+
+        <!-- BRAND -->
+        <h1>Nguyễn Đức Vinh</h1>
+        <p class="subtitle">Advanced Password Security Analyzer</p>
+
+        <!-- INPUT -->
+        <div class="input-wrapper">
+            <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password..."
+                    autocomplete="off"
+            >
+            <span id="toggle" title="Show / Hide Password">👁️</span>
+        </div>
+
+        <!-- STRENGTH BAR -->
+        <div class="strength-bar">
+            <div id="bar"></div>
+        </div>
+
+        <!-- INFO -->
+        <p id="strength">Strength: -</p>
+        <p id="entropy">Entropy: -</p>
+
+        <!-- CRACK TABLE -->
+        <table class="crack-table">
+            <tr>
+                <th>Scenario</th>
+                <th>Time to crack</th>
+            </tr>
+            <tr>
+                <td>Online attack</td>
+                <td id="online">-</td>
+            </tr>
+            <tr>
+                <td>Offline fast hash</td>
+                <td id="fast">-</td>
+            </tr>
+            <tr>
+                <td>Offline slow hash</td>
+                <td id="slow">-</td>
+            </tr>
+        </table>
+
+        <!-- BREACH ALERT -->
+        <p id="breach" class="breach"></p>
+
+        <!-- FEEDBACK -->
+        <ul id="feedback"></ul>
+
+        <!-- FOOTER -->
+        <p class="footer">
+            © Nguyễn Đức Vinh • Cybersecurity Project
+        </p>
+
+    </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
