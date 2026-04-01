@@ -5,7 +5,7 @@ A modern web-based password strength analyzer inspired by Kaspersky Password Che
 ---
 
 ##  Live Demo
-👉 (Add your GitHub Pages link here after deploy)
+https://ng-ducvinh.github.io/password-strength-checker/
 
 ---
 
