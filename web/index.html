@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Tester | Test Your Password Strength</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="wrapper">
+    <div class="container">
+
+        <h1>Nguyen Duc Vinh</h1>
+        <p class="subtitle">Advanced Password Security Analyzer</p>
+
+        <div class="input-wrapper">
+            <input type="password" id="password" placeholder="Enter your password...">
+            <span id="toggle">👁️</span>
+        </div>
+
+        <div class="strength-bar">
+            <div id="bar"></div>
+        </div>
+
+        <p id="strength">Strength: -</p>
+        <p id="entropy">Entropy: -</p>
+
+        <table class="crack-table">
+            <tr><th>Scenario</th><th>Time to crack</th></tr>
+            <tr><td>Online attack</td><td id="online">-</td></tr>
+            <tr><td>Offline fast hash</td><td id="fast">-</td></tr>
+            <tr><td>Offline slow hash</td><td id="slow">-</td></tr>
+        </table>
+
+        <p id="breach" class="breach"></p>
+
+        <ul id="feedback"></ul>
+
+        <p class="footer">© Nguyễn Đức Vinh. All Rights Reserved.</p>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
