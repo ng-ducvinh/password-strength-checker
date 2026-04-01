@@ -1,30 +1,30 @@
-# 🔐 Password Strength Checker – Nguyễn Đức Vinh
+#  Password Strength Checker – Nguyễn Đức Vinh
 
 A modern web-based password strength analyzer inspired by Kaspersky Password Checker, built with a focus on cybersecurity principles and real-world attack scenarios.
 
 ---
 
-## 🚀 Live Demo
+##  Live Demo
 👉 (Add your GitHub Pages link here after deploy)
 
 ---
 
-## 📌 Features
+##  Features
 
-- 🔍 Password strength analysis using zxcvbn
-- 📊 Entropy calculation (bits)
-- ⏱️ Time-to-crack estimation:
+-  Password strength analysis using zxcvbn
+-  Entropy calculation (bits)
+-  Time-to-crack estimation:
   - Online attack
   - Offline fast hash attack
   - Offline slow hash attack
-- ⚠️ Breach detection (k-anonymity API)
-- 💡 Smart recommendations (even if password is not leaked)
-- 🎨 Modern UI with animations and responsive design
-- 👁️ Show / hide password toggle
+-  Breach detection (k-anonymity API)
+-  Smart recommendations (even if password is not leaked)
+-  Modern UI with animations and responsive design
+-  Show / hide password toggle
 
 ---
 
-## 🧠 Security Concepts Applied
+##  Security Concepts Applied
 
 - Password entropy
 - Brute-force & dictionary attacks
@@ -34,7 +34,7 @@ A modern web-based password strength analyzer inspired by Kaspersky Password Che
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - HTML, CSS, JavaScript
 - zxcvbn (password strength library)
